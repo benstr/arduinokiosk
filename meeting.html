@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Arduino Event Kiosk</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="logo-header">
+        <a class="logo" href="./index.html">
+            <img src="logo.png">
+        </a>
+    </div>
+    <div class="container">
+        <div id="meeting-form">
+            <div id="Guneet" class="tabcontent" style="display: block;">
+                <!-- Start of Meetings Embed Script -->
+                    <div class="meetings-iframe-container" data-src="https://meetings-eu1.hubspot.com/guneet-bedi?embed=true"></div>
+                    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+                <!-- End of Meetings Embed Script -->
+            </div>
+            
+            <div id="Paul" class="tabcontent">
+<!-- Start of Meetings Embed Script -->
+<div class="meetings-iframe-container" data-src="https://meetings-eu1.hubspot.com/paul-kaeley?embed=true"></div>
+<script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+<!-- End of Meetings Embed Script -->
+            </div>
+            
+            <div id="Ben" class="tabcontent">
+<!-- Start of Meetings Embed Script -->
+<div class="meetings-iframe-container" data-src="https://meetings-eu1.hubspot.com/meetings/ben-strahan?embed=true"></div>
+<script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+<!-- End of Meetings Embed Script -->
+            </div>
+
+            <div id="Jesse" class="tabcontent">
+<!-- Start of Meetings Embed Script -->
+<div class="meetings-iframe-container" data-src="https://meetings-eu1.hubspot.com/jesse-masters?embed=true"></div>
+<script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+<!-- End of Meetings Embed Script -->
+            </div>
+
+            <div id="Candice" class="tabcontent">
+<!-- Start of Meetings Embed Script -->
+<div class="meetings-iframe-container" data-src="https://meetings-eu1.hubspot.com/candice-digby?embed=true"></div>
+<script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+<!-- End of Meetings Embed Script -->
+            </div>
+        </div>
+        <div id="sidenav">
+            <div>
+                <button class="tablinks" onclick="openMeeting(event, 'Guneet')">Guneet Bedi</button>
+            </div>
+            <div>
+                <button class="tablinks" onclick="openMeeting(event, 'Paul')">Paul Kaeley</button>
+            </div>
+            <div>
+                <button class="tablinks" onclick="openMeeting(event, 'Ben')">Ben Strahan</button>
+            </div>
+            <div>
+                <button class="tablinks" onclick="openMeeting(event, 'Jesse')">Jesse Masters</button>
+            </div>
+            <div>
+                <button class="tablinks" onclick="openMeeting(event, 'Candice')">Candice Digby</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function openMeeting(evt, personName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(personName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</html>

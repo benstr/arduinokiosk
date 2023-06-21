@@ -1,0 +1,76 @@
+body {
+    background-color: #202020;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+img {
+    height: 100%;
+}
+
+h3 {
+    color: white;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: normal;
+    outline: none;
+    padding: 4px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: translateZ(0);
+    transition: .3s;
+    border: 2px solid #def154;
+    background: #def154;
+    color: #202020;
+    border-radius: 32px 0 0 32px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+#sidenav{
+    width: 30%;
+    padding: 64px 000;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: end;
+}
+
+#sidenav>div{
+    width: 100%;
+}
+
+#contact-form{
+    width: 70%;
+    padding: 40px 30px;
+}
+
+#meeting-form{
+    width: 70%;
+    padding: 40px 30px;
+}
+
+#logo-header {
+    height: 40px;
+    display: block;
+    text-align: center;
+    padding: 30px;
+}
+
+.tabcontent {
+    display: none;
+  }
